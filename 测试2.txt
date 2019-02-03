@@ -1,1 +1,5 @@
+<<<<<<< HEAD
 abcdeg
+=======
+abcdef
+>>>>>>> test
