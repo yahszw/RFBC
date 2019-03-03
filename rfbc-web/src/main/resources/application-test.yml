@@ -1,0 +1,7 @@
+server:
+  port: 8081 #端口，默认为8080
+  context-path: /center #访问路径，默认为/
+logging:
+  file: /log.txt #输出日志文件，默认不输出
+  level:
+    root: INFO #修改日志级别，默认为INFO

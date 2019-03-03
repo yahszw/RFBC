@@ -1,0 +1,38 @@
+server:
+  port: 8081 #端口，默认为8080
+  context-path: / #访问路径，默认为/
+
+logging:
+  file: /log.txt #输出日志文件，默认不输出
+  level:
+    root: INFO #修改日志级别，默认为INFO
+
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: RFBC
+    password: RFBC
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+    databaseSchemaUpdate: true
+    druid:
+      max-active: 60
+      initial-size: 10
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 3000
+      min-evictable-idle-time-millis: 300000
+
+  activiti:
+    check-process-definitions: false #关闭自动部署.BPMN
+    database-schema-update: true #这个管用  没有表将自动创建
+    db-identity-used: false #这段代码表示是否使用activiti自带用户组织表，如果是，这里为true，如果不是，这里为false
+
+  security:
+    user:
+      name: admin
+      password: admin
+    basic:
+      enabled: false
+
+
