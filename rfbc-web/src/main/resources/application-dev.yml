@@ -14,9 +14,7 @@ spring:
       time-between-eviction-runs-millis: 3000
       min-evictable-idle-time-millis: 300000
 
-  activiti:
-    check-process-definitions: false
-    database-schema-update: true #这个管用  没有表将自动创建
-
-
-debug: true
+    activiti:
+      check-process-definitions: false #关闭自动部署.BPMN
+      database-schema-update: true #这个管用  没有表将自动创建
+      db-identity-used: false #这段代码表示是否使用activiti自带用户组织表，如果是，这里为true，如果不是，这里为false
