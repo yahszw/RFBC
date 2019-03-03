@@ -1,0 +1,19 @@
+spring:
+  datasource:
+    url: jdbc:oracle:thin:@127.0.0.1:1521:orcl
+    username: RFBC
+    password: RFBC
+    driver-class-name: oracle.jdbc.driver.OracleDriver
+    type: com.alibaba.druid.pool.DruidDataSource
+    databaseSchemaUpdate: true
+    druid:
+      max-active: 60
+      initial-size: 10
+      max-wait: 60000
+      min-idle: 1
+      time-between-eviction-runs-millis: 3000
+      min-evictable-idle-time-millis: 300000
+
+  activiti:
+    check-process-definitions: false
+    database-schema-update: true #这个管用  没有表将自动创建
