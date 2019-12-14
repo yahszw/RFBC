@@ -1,5 +1,0 @@
-<<<<<<< HEAD
-abcdeg
-=======
-abcdef
->>>>>>> test
