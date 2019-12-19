@@ -3,11 +3,60 @@
 <head>
     <meta charset="UTF-8">
     <title>青岛润发建筑机械有限公司</title>
+    <!--[if lt IE 9]>
+    <script src="http://cdn.static.runoob.com/libs/html5shiv/3.7/html5shiv.min.js"></script>
+    <![endif]-->
+    <style>
+        body {margin:0;padding:0;}
+        /*.outer{*/
+        /*    background-color: #E6E6E6;*/
+        /*    position:fixed;*/
+        /*    width: 100%;*/
+        /*    height:100%;*/
+        /*}*/
+        /*.A {height:100%;*/
+        /*    width:100%;*/
+        /*    position:fixed;*/
+        /*    background: url("/images/background2.jpg") no-repeat;}*/
+        .outer{
+            width:100%;
+            height:100%;
+            border:2px solid #000;
+            display:table-cell;
+            vertical-align:middle;
+            text-align: center;
+            position:fixed;
+            background-color: #B8D3F0;
+        }
+        .A {
+            width:100%;
+            height:95%;
+            display:inline-block;
+            background: url("/images/background2.jpg") no-repeat;
+            background-size:cover;
+        }
+        .B {
+            width:100%;
+            height:5%;
+            display:inline-block;
+            background-color: #B8D3F0;
+        }
+    </style>
 </head>
-<body th:background="@{/images/background.jpg}" style="background-size:cover;">
-<!--    <div style="position:fixed; left:0px; top:0px; width:100%; height:100%;">-->
-<!--        <img src="images/background.jpg" width="100%" height="100%">-->
+<body>
+<div class="outer">
+    <div class="A">
+    </div>
+    <div class="B">
+    </div>
+</div>
+<!--th:background="@{/images/background2.jpg}" style="background-size:cover;"-->
+<!--    <div style="position:absolute;width: 100%;height: 100%;">-->
+<!--        <img src="images/background2.jpg">-->
 <!--    </div>-->
 <!--background:url(' + @{/images/background.jpg} + ');-->
+<!--    <div style="float: left;">-->
+<!--        <strong style="color: white">青岛润发建筑机械有限公司</strong>-->
+<!--    </div>-->
 </body>
 </html>
